@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Персональные данные" directorySegmentName="seg_0" id="FACD0D8C-3E21-34CD-80D9-45DCA3047FE1">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 07:38:46 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="4F31FFF3-F962-2A6D-6FD2-1B67BDB3D299" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<nameOnSource>Индентифицируют</nameOnSource>
+<nameOnTarget>Дополнительно индентифицируется</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>3CF28253-1DC1-0C82-E5CD-653C4B5E11FA</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>B6AF93DD-278A-E103-5030-BBBBA9F7252E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

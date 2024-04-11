@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5FCB96C-D944-E92B-E6A0-A51D7E1A4C50" name="Зона_аренды">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-11 07:53:39 UTC</createdTime>
+<generatorID>113E2433-448E-19D1-5355-8F8BFA2814B2</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<abbreviation>Area</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Area_ID" id="5BF8C652-F1F8-BE62-B480-ED11C44272D2">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-11 07:53:39 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Страна" id="6BFB7F96-F707-989E-E48D-EF4BB7BC86AC">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-11 07:53:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Страна, в которой можно арендовать и использовать автомобиль]]></commentInRDBMS>
+<generatorID>93E12540-88F0-4C54-F683-6741203B648C</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1B613875-A525-6B3F-7169-34547D8910C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Регион" id="12DDB022-19DB-00A3-AD4C-14F7E0080F6D">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-11 07:53:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Регион, в котором можно арендовать и использовать автомобиль]]></commentInRDBMS>
+<generatorID>80AEF837-B3FE-E96D-AA78-D83C163FD93A</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1B613875-A525-6B3F-7169-34547D8910C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Улица" id="1D319DB1-990B-9026-DFE2-AD1F9A2F38E5">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-11 07:53:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Часть адреса, возможного расположения арендованного автомобиля]]></commentInRDBMS>
+<generatorID>3CE92849-C574-143C-8580-4E4C62B0D3F0</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1B613875-A525-6B3F-7169-34547D8910C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Номер_дома" id="354F504D-190D-5BF5-B012-522973AC656A">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-11 07:53:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Часть адреса, возможного расположения арендованного автомобиля]]></commentInRDBMS>
+<generatorID>E3AC6D4A-0002-6DB9-90C5-1B8D3A4817AD</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1B613875-A525-6B3F-7169-34547D8910C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7729C810-4AB7-60D3-7D08-BF201FEE8A82" name="Area_PK">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-11 07:53:39 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="5BF8C652-F1F8-BE62-B480-ED11C44272D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
