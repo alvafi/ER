@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F1A2E887-9434-AD17-08FC-6D643D49128B" name="Car">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<generatorID>AB2E1292-8C6A-5D29-84DA-8AB1A824F115</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<abbreviation>Car</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VIN" id="8AD11084-9AFF-88C9-E2D9-09B115CE82D1">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Идентификационный номер автомобиля, т.е. VIN]]></commentInRDBMS>
+<generatorID>14AA3858-3051-89F4-C555-8E0CD3B8B213</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<domain>9679204D-0231-F81A-10DD-F0B8F23E1578</domain>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="State_number" id="D1DBC4EF-E918-B952-26E9-882A67068759">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Государственные номера автомобиля]]></commentInRDBMS>
+<generatorID>91D184B4-DAB5-EA59-E5E1-EBC60D39E02E</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GPS-tracker" id="65905DD5-933D-CAA4-7D93-D4E948B13735">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Код, который помогает получать данные GPS-трекера, установленного в автомобиле]]></commentInRDBMS>
+<generatorID>FE08878F-EE8D-DE81-AE54-9D0BB2FAC824</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Car_ID" id="22FAB2A8-5725-FAEA-BA44-CE45F33512A0">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D556836F-91BB-3CEC-6B34-9D9A3FF64E1B" name="Car_PK">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="22FAB2A8-5725-FAEA-BA44-CE45F33512A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4837F5B3-3F18-335F-6F9C-B2A771F0AD52" name="Review">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 07:20:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Сущность, отвечающая за отзывы клиентов после аренды]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="4F31FFF3-F962-2A6D-6FD2-1B67BDB3D299" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>Rev</shortName>
+<synonymToDisplay>Отзыв</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Type of review" id="708DDD8C-238E-B210-4B01-64A03EB05D6B">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 07:25:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Отзывы подразделяются на два типа (пожелание и жалоба)]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="4F31FFF3-F962-2A6D-6FD2-1B67BDB3D299" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C3123C9F-6FC7-4450-0FF6-7B3A890AA40A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Score" id="6D3292DB-AA83-6271-2DCA-CD38501CDB54">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 09:02:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Оценка арендыв 5-ти бальной системе оценивания]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="4F31FFF3-F962-2A6D-6FD2-1B67BDB3D299" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>35252B46-52E8-070F-0C65-1C7A108ED3FF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>5</endValue>
+<description>5-ти балльная система оценивания аренды</description>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+</Entity>

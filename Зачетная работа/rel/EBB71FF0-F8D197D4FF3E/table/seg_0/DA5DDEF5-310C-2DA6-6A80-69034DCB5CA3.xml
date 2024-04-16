@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA5DDEF5-310C-2DA6-6A80-69034DCB5CA3" name="Rental_area">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<generatorID>113E2433-448E-19D1-5355-8F8BFA2814B2</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<abbreviation>Area</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Сountry" id="5BD4AC4E-29F6-6E07-2EC4-328C52067D83">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Страна, в которой можно арендовать и использовать автомобиль]]></commentInRDBMS>
+<generatorID>93E12540-88F0-4C54-F683-6741203B648C</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1B613875-A525-6B3F-7169-34547D8910C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Region" id="85829362-B08C-337A-A80A-5B4DDB385A32">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Регион, в котором можно арендовать и использовать автомобиль]]></commentInRDBMS>
+<generatorID>80AEF837-B3FE-E96D-AA78-D83C163FD93A</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1B613875-A525-6B3F-7169-34547D8910C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Street" id="CAE729C1-F226-E292-BC9A-89B2C43F5B2F">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Часть адреса, возможного расположения арендованного автомобиля]]></commentInRDBMS>
+<generatorID>3CE92849-C574-143C-8580-4E4C62B0D3F0</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1B613875-A525-6B3F-7169-34547D8910C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="House_number" id="50939757-79D7-2C29-0C6B-637BBCFD8974">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Часть адреса, возможного расположения арендованного автомобиля]]></commentInRDBMS>
+<generatorID>E3AC6D4A-0002-6DB9-90C5-1B8D3A4817AD</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1B613875-A525-6B3F-7169-34547D8910C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Area_ID" id="9ACBE1AF-C789-D3CF-D673-91F9BA2CAA63">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9E4E4B6A-44ED-5E6A-3930-88BD550245D6" name="Area_PK">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="9ACBE1AF-C789-D3CF-D673-91F9BA2CAA63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

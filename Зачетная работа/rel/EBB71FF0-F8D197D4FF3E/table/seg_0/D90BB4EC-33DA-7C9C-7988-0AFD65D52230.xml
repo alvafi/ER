@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D90BB4EC-33DA-7C9C-7988-0AFD65D52230" name="Brand_of_car">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<generatorID>E36607D8-1041-50BE-D4D6-7E9068A89CEC</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<abbreviation>Brand</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Name_of_engine" id="28D33BCA-C9A2-DEF7-66FC-A48B674327F7">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Название двигателя, установленного в  марке автомобиля]]></commentInRDBMS>
+<generatorID>1302A8A3-9E26-C409-20D2-BD2CCAC18874</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Model" id="B8142D1E-F018-23DE-F7E1-76AC86057B72">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Модель  автомобиля]]></commentInRDBMS>
+<generatorID>834331A1-732C-5235-FE87-A2A0D38614B0</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Year_of_release" id="EEDF8952-3562-963A-2312-29624D58C1E2">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Год выпуска автомобиля]]></commentInRDBMS>
+<generatorID>3B541F4B-D65B-4906-7DCD-49AACC83F8E4</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Brand_ID" id="E88B77A2-2567-A5B6-6C54-9FE8D3834D56">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Car_Car_ID" id="8B8F1497-9F6F-5CE2-D867-8DBE47E6984B">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E94CBAD2-43CC-3A69-5146-B296A284414B" referredColumn="22FAB2A8-5725-FAEA-BA44-CE45F33512A0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BFCF99EC-7606-F805-62AC-3CB7BAFD4CC2" name="Brand_PK">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="E88B77A2-2567-A5B6-6C54-9FE8D3834D56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6BF83F5-BE92-D470-CFE4-D2E01140167D" name="Brand_Car_FK">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<generatorID>57D5D287-1280-72FF-3420-CCFA18BEC3E9</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B8F1497-9F6F-5CE2-D867-8DBE47E6984B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

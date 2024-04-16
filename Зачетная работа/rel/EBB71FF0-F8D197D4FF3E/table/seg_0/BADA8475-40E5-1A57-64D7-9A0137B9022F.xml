@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BADA8475-40E5-1A57-64D7-9A0137B9022F" name="Rent">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<generatorID>C041797C-7096-7EF2-9513-5C659D894DAC</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<abbreviation>Rent</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Start_date_of_rent" id="53BA23D0-0CE4-98B0-0202-44170890CD8A">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Дата начала аренды, момент с которого начинается аренда автомобиля]]></commentInRDBMS>
+<generatorID>F3937838-5C58-ACA1-F1D6-AD23A24C073B</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="End_date_of_rent" id="06D3EA11-E361-0674-C3F7-5D72C2C98D91">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Дата конца аренды, дата, когда заканчивается аренда автомобиля]]></commentInRDBMS>
+<generatorID>84C934FB-D069-02AA-32E3-CB65B9B79A4C</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Type_of_rent" id="4263D849-1716-E801-C4B3-3A5AE1C3543D">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Вид аренды, определяющий тарифный план]]></commentInRDBMS>
+<generatorID>D858F737-2AD1-B762-B1FF-9A0D0874ECC2</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EEEEDF76-A465-512B-339A-25C7821AB375</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rent_ID" id="115B67D5-4B0B-BF4C-55EE-FFF6AE2D3182">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Client_Client_ID" id="1A6B63DB-898A-069E-7471-6AE7FAC87E3B">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E267018-3EAD-87B2-D1CC-92A36A6F59E5" referredColumn="792038E9-690F-6CB6-842D-088DDF665F58"/>
+</associations>
+</Column>
+<Column name="Car_Car_ID" id="16D6AB4E-FEE3-314A-E178-980726F7FD51">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F876A9E2-404D-956C-9A1B-56F518E1FB51" referredColumn="22FAB2A8-5725-FAEA-BA44-CE45F33512A0"/>
+</associations>
+</Column>
+<Column name="Rental_area_Area_ID" id="8988107C-9569-3DF1-9786-B2C36611AEB4">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84A272EC-EA91-18B4-D5E6-730C12A25769" referredColumn="9ACBE1AF-C789-D3CF-D673-91F9BA2CAA63"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="144E2908-AAB7-FAB0-4BC7-8C6ACE103088" name="Rent_PK">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="115B67D5-4B0B-BF4C-55EE-FFF6AE2D3182"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE24AB25-7847-5815-ABD0-9ADFAC155932" name="Rent_Client_FK">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<generatorID>E0E264EB-8E6C-5C42-9D0F-AF38B52B8DB4</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A6B63DB-898A-069E-7471-6AE7FAC87E3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="297BD31B-3BF4-43C1-B9B8-82BEED09D742" name="Rent_Car_FK">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<generatorID>ED997487-886A-140A-9C34-D0ABD4822AB0</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16D6AB4E-FEE3-314A-E178-980726F7FD51"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ECABFBD1-BE47-40EA-5A14-B368B14D42A6" name="Rent_Area_FK">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-03-31 19:03:56 UTC</createdTime>
+<generatorID>33435815-F7B7-31D3-9F28-450B4586009A</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8988107C-9569-3DF1-9786-B2C36611AEB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
