@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99825145-462D-D67E-3581-393CE3D10A87" name="Rental_area">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<generatorID>113E2433-448E-19D1-5355-8F8BFA2814B2</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<abbreviation>Area</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Сountry" id="6D7AF731-B6A7-BF2D-F5B4-8F1C9622083A">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Страна, в которой можно арендовать и использовать автомобиль]]></commentInRDBMS>
+<generatorID>93E12540-88F0-4C54-F683-6741203B648C</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1B613875-A525-6B3F-7169-34547D8910C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Region" id="F5ADB630-0F84-58FE-2AE0-DA4DD656F18E">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Регион, в котором можно арендовать и использовать автомобиль]]></commentInRDBMS>
+<generatorID>80AEF837-B3FE-E96D-AA78-D83C163FD93A</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1B613875-A525-6B3F-7169-34547D8910C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Area_ID" id="681C4034-C53F-E339-4A11-7E40D8AD2030">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="670E173A-A350-52EE-6DAF-682B89A9152B" name="Area_PK">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="681C4034-C53F-E339-4A11-7E40D8AD2030"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Аренда мащины" directorySegmentName="seg_0" id="E0E264EB-8E6C-5C42-9D0F-AF38B52B8DB4">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 07:50:30 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="4F31FFF3-F962-2A6D-6FD2-1B67BDB3D299" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<nameOnSource>Оформляет</nameOnSource>
+<nameOnTarget>Оформляется</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B6AF93DD-278A-E103-5030-BBBBA9F7252E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C041797C-7096-7EF2-9513-5C659D894DAC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

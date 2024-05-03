@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6D08CABD-4142-64D2-6038-610DA3010F7B" name="Old_personal_data">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<generatorID>3CF28253-1DC1-0C82-E5CD-653C4B5E11FA</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<abbreviation>Old_pers_data</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Change_date" id="90058D14-1C91-0F0B-A235-E6504215542D">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Дата изменения персональных данных клиента на новые]]></commentInRDBMS>
+<generatorID>C85843CD-0067-F04A-E000-D23A416A0723</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Driver_license_number" id="B775254B-8D4F-F7EF-97CA-304248A4A80B">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Старый номер водительского удостоверения клиента]]></commentInRDBMS>
+<generatorID>CFAD4D5C-888C-DF8B-99D0-DE616AE3C481</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9C351772-5FC7-8D97-A2AD-EF2CDFDF443F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Insurance_company" id="0C5BDF54-1615-C0FC-084B-7F0BB52C682F">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Названия предыдущей страховой компании, позволяет узнавать количество нарушений  ПДД, в случае замены страховой компании]]></commentInRDBMS>
+<generatorID>5666ADDE-E38E-B7BF-5379-6BA36309B034</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Issue_date_of_driver_license" id="1E92601E-B939-C724-1DFC-6ADBE03D6ECB">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Старая дата выдачи водительского удостоверения клиента]]></commentInRDBMS>
+<generatorID>023543CF-2026-220D-C768-4BE50B671016</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Old_pers_data_ID" id="DA211EC0-F4C0-F100-DA48-891CC3AD0552">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Client_Client_ID" id="8A65DFF3-74B3-FADD-5A04-6365A3BFDD31">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DAB587D-C84F-4E44-35C9-6B698650F4C8" referredColumn="98E5113C-4F73-8F54-425D-75DDF141DBBB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="14B86918-91DC-A8C2-D878-B06EBB84437B" name="Old_pers_data_PK">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="DA211EC0-F4C0-F100-DA48-891CC3AD0552"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC1FEF59-E4A6-E7CE-BD3C-A45D33F982FA" name="Old_pers_data_Client_FK">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<generatorID>FACD0D8C-3E21-34CD-80D9-45DCA3047FE1</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A65DFF3-74B3-FADD-5A04-6365A3BFDD31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

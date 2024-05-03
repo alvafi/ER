@@ -1,0 +1,221 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B6AF93DD-278A-E103-5030-BBBBA9F7252E" name="Client">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 06:40:41 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>Client</shortName>
+<synonymToDisplay>Клиент</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Driver license number" id="4899840C-C698-A148-8D7B-DBE3C67BCA64">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 06:41:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Номер водительского удостоверения клиента, определяет его возможность арендовать автомобиль]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9C351772-5FC7-8D97-A2AD-EF2CDFDF443F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Issue date of driver license" id="0CACE631-49B9-9201-5523-7A1610598848">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 09:30:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Дата выдачи водительского,  необходима для проверки действителен ли документа]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Driver license category" id="19E48107-FD3B-3A98-F778-2158A6B97E2F">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 09:32:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Категория прав определяет марку автомобиля, который может арендовать клиент]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Surname" id="C1AF102B-AF43-2D6C-3B22-DEF9889C9EF6">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 09:33:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Фамилия клиента]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9C351772-5FC7-8D97-A2AD-EF2CDFDF443F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Name" id="0092AA4A-D0AE-5723-39F5-3DD27E0594C2">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 09:33:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Имя клиента]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9C351772-5FC7-8D97-A2AD-EF2CDFDF443F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Patronymic" id="340260F2-81BC-FF0D-E35F-7B30E6052862">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 09:33:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Отчество клиента]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9C351772-5FC7-8D97-A2AD-EF2CDFDF443F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Birth date" id="F5F28694-1635-0A4A-45B9-C7B494010081">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 09:33:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Дата рождения клиента определяет его возможность арендовать автомобиль]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Country" id="47EF36CF-9124-4577-4C09-BA21E537421E">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 09:35:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Страна, в которой клиент хочет арендовать автомобиль]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1B613875-A525-6B3F-7169-34547D8910C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Region" id="D2ECAB70-5116-9E36-BE1D-F5898D4BC0F1">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 09:35:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Регион, где клиент хочет арендовать автомобиль]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1B613875-A525-6B3F-7169-34547D8910C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Street" id="0FF50903-4DD4-04F2-36E3-A68026066905">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 09:35:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Часть адреса, где клиент хочет арендовать автомобиль]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1B613875-A525-6B3F-7169-34547D8910C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="House number" id="72F2652D-2D37-77A2-49B7-BF02FE84F337">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 09:35:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Часть адреса, где клиент хочет арендовать автомобиль]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1B613875-A525-6B3F-7169-34547D8910C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Passport number and series" id="07D7E931-5871-10BD-B970-8139325318DD">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 09:38:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Номер и серия паспорта клиента]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9C351772-5FC7-8D97-A2AD-EF2CDFDF443F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Insurance company" id="F6A62FFE-E16F-8F21-29E1-18533EC88B0B">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 11:08:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Название страховой компании позволяет связаться с данным учреждением, чтоб узнать количество ПДД клиента, что определяет тарифный план и марку машины]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CTP policy number" id="D7E49D93-C1EE-DB3A-703B-0C1C08C4792B">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 11:23:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Номер полиса ОСАГО клиента, позволяет определить его возможность арендовать автомобиль ]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9C351772-5FC7-8D97-A2AD-EF2CDFDF443F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Issue date of CTP policy" id="60B2719C-B580-6901-5EFE-004BE4459329">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-04-03 11:24:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Дата оформления полиса ОСАГО клиента позволяет определить действителен ли документ]]></commentInRDBMS>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<engineerTo>
+<item key="F2844D1B-4AD9-B097-311E-58A6B02213DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

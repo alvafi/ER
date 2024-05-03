@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="00E8A47E-BE4B-14C5-1274-5E1D1F41C058" name="Review">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Сущность, отвечающая за отзывы клиентов после аренды]]></commentInRDBMS>
+<generatorID>4837F5B3-3F18-335F-6F9C-B2A771F0AD52</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<abbreviation>Rev</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Type_of_review" id="9ED10281-EA2D-5FD4-3C1B-EA31D9F6D31B">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Отзывы подразделяются на два типа (пожелание и жалоба)]]></commentInRDBMS>
+<generatorID>708DDD8C-238E-B210-4B01-64A03EB05D6B</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C3123C9F-6FC7-4450-0FF6-7B3A890AA40A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Score" id="7D6786DC-1DE9-974C-0538-31F3AE62B755">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Оценка арендыв 5-ти бальной системе оценивания]]></commentInRDBMS>
+<generatorID>6D3292DB-AA83-6271-2DCA-CD38501CDB54</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>35252B46-52E8-070F-0C65-1C7A108ED3FF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>5</endValue>
+<description>5-ти балльная система оценивания аренды</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="Rev_ID" id="AA3BD8BA-9B72-0204-5B93-D5736B77BD1F">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Rent_Rent_ID" id="A6784EB2-F99C-8B8D-D157-FFA3C4D62480">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57523040-03B4-7A02-853C-EB7186B96AC5" referredColumn="2E56F592-F92C-F0B3-4D42-CF0990597D68"/>
+</associations>
+</Column>
+<Column name="Car_Car_ID" id="8EAAC75B-7FA0-57A3-2789-6C503F81658C">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFBAD4DA-C482-06C9-46E0-CEA28EB20587" referredColumn="2EC53955-B34F-5F36-6FD1-DEDF935F5D5C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3DE7B89-F39A-299A-E3A4-C966C3D92FB5" name="Rev_PK">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="AA3BD8BA-9B72-0204-5B93-D5736B77BD1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7301E99B-C80E-C230-388E-8FCCE89FE0EE" name="Rev_Rent_FK">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<generatorID>B1246EA1-F0B3-5EAD-651B-94AA822E5BC1</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6784EB2-F99C-8B8D-D157-FFA3C4D62480"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC7726D5-160F-BAA8-E827-6931F3C87C51" name="Rev_Car_FK">
+<createdBy>Алсу</createdBy>
+<createdTime>2024-05-03 07:11:55 UTC</createdTime>
+<generatorID>CE234E35-A60B-3FC6-3230-A187B5F8A61B</generatorID>
+<ownerDesignName>Зачетная работа</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EAAC75B-7FA0-57A3-2789-6C503F81658C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
